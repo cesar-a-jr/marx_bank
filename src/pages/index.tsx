@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Montserrat } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import card from '../assets/img/card.png'
+import Header from './components/Header'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Header/>
         <div className={styles.home}>
           <div className={styles.left}>
           <h1 className={montserrat.className}>MarxBank <br></br> Banco 100% digital</h1> 
