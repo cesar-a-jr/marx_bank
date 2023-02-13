@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Montserrat } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import card from '../assets/img/card.png'
-import Header from './components/Header'
+import Head from "next/head";
+import Image from "next/image";
+import { Montserrat } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import card from "../assets/img/card.png";
+import Header from "./components/Header";
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -17,21 +17,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Header/>
+        <Header />
         <div className={styles.home}>
           <div className={styles.left}>
-          <h1 className={montserrat.className}>MarxBank <br></br> Banco 100% digital</h1> 
-          <p  className={montserrat.className}>Abrir uma conta digital nunca foi tão  simples!</p>
-          <div  className={styles.buttons}>
-          <button  className={montserrat.className}>Abrir uma conta</button>
-          </div>
+            <h1 className={montserrat.className}>
+              MarxBank <br></br> Banco 100% digital
+            </h1>
+            <p className={montserrat.className}>
+              Abrir uma conta digital nunca foi tão simples!
+            </p>
+            <div className={styles.buttons}>
+              <button className={montserrat.className}>Abrir uma conta</button>
+            </div>
           </div>
           <div className={styles.right}>
-            <Image src={card} alt=''/>
+            <Image src={card} alt="" />
           </div>
         </div>
-
       </main>
     </>
-  )
+  );
 }

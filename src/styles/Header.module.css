@@ -6,6 +6,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  animation: slide-in 0.5s linear;
 }
 
 .nav{
@@ -66,10 +67,37 @@
   border-radius: 8px;
   color: #eb3850;
   transition: 0.25s;
+  animation:  login-in 1s;
 }
 
 .login:hover{
   background-color: #eb3850;
   color: #f2f4fdff;
   border: 1px solid #f2f4fdff;
+}
+
+@keyframes slide-in {
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes login-in {
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }
