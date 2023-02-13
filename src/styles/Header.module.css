@@ -16,21 +16,60 @@
   align-items: center;
 }
 
+.aling{
+  display: flex;
+  align-items: center;
+
+}
+
+
 .Button {
   all: unset;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.Button:hover{
+  color: #eb3850;
 }
 
 .DropdownMenuContent {
-  border-radius: 6px;
   padding: 20px;
-  width: 100px;
-  background-color: white;
   box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  background-color: white;
+  border-radius: 6px;
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
 }
 
-.DropdownMenuItem{
-  padding: 0.5rem;
+.DropdownMenuItem {
+  text-align: center; 
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.DropdownMenuItem:hover{
+  color: #eb3850;
+}
+
+.login{
+  font-size: 24px;
+  background-color: #f2f4fdff;
+  padding: 0.5rem 1rem; 
+  border: none;
+  border-radius: 8px;
+  color: #eb3850;
+  transition: 0.25s;
+}
+
+.login:hover{
+  background-color: #eb3850;
+  color: #f2f4fdff;
+  border: 1px solid #f2f4fdff;
 }
